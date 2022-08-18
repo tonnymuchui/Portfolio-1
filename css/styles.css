@@ -31,7 +31,8 @@
   background-image: url(/images/background.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 459px;
+  background-size: 430px;
+  background-position-x: 37px;
 }
 
 .align-center-text {
@@ -40,7 +41,7 @@
 
 .header-text {
   position: static;
-  width: 356px;
+  width: 320px;
   height: 150px;
   left: 0px;
   top: 1px;
@@ -55,14 +56,13 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 1px 0;
+  margin: 0px;
 }
 
 .content-text {
   position: static;
   width: 300px;
-  margin-top: 20px;
-  margin-bottom: 90px;
+  margin-top: 0px;
   height: 100px;
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
@@ -73,10 +73,6 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-
-.social-align {
-  padding: 0;
 }
 
 .social-connect {
@@ -93,8 +89,15 @@
   flex: none;
   order: 0;
   flex-grow: 0; 
+  margin-top: 25px;
+  margin-bottom: 29px;
 }
+
+.social-align {
+    padding: 0;
+  }
 
 .social-media-icons {
   display: inline;
+  margin-left: 4px;
 }
