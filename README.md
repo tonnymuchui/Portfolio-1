@@ -4,7 +4,7 @@
 
 > Welcome to my Portfolio Mobile Version
 
-#### Splash Page.
+#### Mobile View Portfolio Image.
 <img align="left" width="250" src="/images/portfolio.png" alt="Portfolio Mobile View" />
 
 ## Built With
