@@ -4,14 +4,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
   background-color: #ffff;
   color: #6070ff;
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav-brand {
-  position: static;
   width: 100px;
   height: 20px;
   margin-left: 61px;
@@ -37,15 +45,12 @@
 }
 
 .header-text {
-  position: static;
   width: 320px;
-  height: 150px;
-  top: 1px;
+  height: 90px;
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
   display: flex;
   align-items: center;
   color: #172b4d;
@@ -55,7 +60,6 @@
 }
 
 .content-text {
-  position: static;
   width: 300px;
   height: 100px;
   font-family: 'Poppins', sans-serif !important;
