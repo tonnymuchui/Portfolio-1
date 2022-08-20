@@ -106,14 +106,20 @@ a {
 
 .social-media-icons {
   display: inline;
-  margin-left: 4px;
 }
 
+.social-media-align {
+  margin-left: 25px;
+}
 /* works-section */
 
 .container {
   display: grid;
   grid-template-columns: 1;
+  padding: 10px;
+  scroll-margin-top: inherit;
+  overflow: clip;
+  margin-left: 30px;
 }
 
 .works-section {
@@ -200,6 +206,14 @@ a {
   color: #091e42;
 }
 
+.work-heading-2 {
+  height: 76px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #091e42;
+}
+
 .btn {
   width: auto;
   height: auto;
@@ -210,7 +224,7 @@ a {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
-  color: #396df2;
+  color: var(--color-primary);
   padding: 12px;
   border: 1px solid #6070ff;
   box-sizing: border-box;
@@ -239,7 +253,7 @@ a {
 }
 
 .language-card {
-  width: 350px;
+  width: 300px;
   height: 50px;
   text-align: start;
   align-content: center;
@@ -285,14 +299,14 @@ a {
   justify-content: right;
   display: inline-block;
   align-items: flex-end;
-  padding-left: 252px;
+  padding-left: 210px;
   position: absolute;
   margin-top: -34px;
 }
 
 hr {
   margin-left: -35px;
-  width: 340px;
+  width: 290px;
   align-items: center;
   justify-content: center;
 }
