@@ -111,7 +111,7 @@ a {
 
 /* works-section */
 
-container {
+.container {
   display: grid;
   grid-template-columns: 1;
 }
@@ -221,9 +221,8 @@ container {
 }
 
 .btn:hover {
-  background-color: #6070FF;;
+  background-color: #6070ff;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .btn-text:hover {
@@ -264,7 +263,6 @@ container {
   padding-left: 22px;
   margin-top: 17px;
   align-items: flex-end;
-  font-family: "poppins", sans-serif !important;
   display: inline-block;
   position: absolute;
 }
