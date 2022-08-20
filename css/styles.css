@@ -117,11 +117,9 @@ a {
 }
 
 .works-section {
-  margin-left: 35px;
   display: flex;
-  width: 420px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .work-card {
