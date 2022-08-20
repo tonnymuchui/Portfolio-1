@@ -99,3 +99,27 @@ a {
   display: inline;
   margin-left: 4px;
 }
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.btn-text:hover {
+  color: #fff;
+}
