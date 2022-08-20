@@ -117,6 +117,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .work-card {
   background-color: #fff;
   border-radius: 24px;
@@ -143,6 +144,7 @@ a {
   justify-content: start;
   margin-left: -39px;
 }
+
 .works-badge {
   text-align: start;
   padding: 0.4rem 1.2rem;
@@ -180,6 +182,7 @@ a {
 .bullet {
   padding-left: 15px;
 }
+
 .work-description {
   color: var(--color-text);
 }
