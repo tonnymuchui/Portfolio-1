@@ -157,7 +157,7 @@ a {
 }
 
 .works-badge {
-  text-align: start;
+  float: inline-start;
   padding: 0.4rem 1.2rem;
   background: #ebebff;
   font-family: "poppins", sans-serif !important;
