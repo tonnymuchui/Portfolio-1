@@ -314,7 +314,6 @@ hr {
 
 /* footer */
 
-
 .footer {
   display: flex;
   height: 779px;
@@ -382,7 +381,7 @@ hr {
   margin-left: -200px;
 }
 
- .getin1 {
+.getin1 {
   margin-left: 1px;
   width: auto;
   height: auto;
