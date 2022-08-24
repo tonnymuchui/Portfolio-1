@@ -382,7 +382,7 @@ hr {
   margin-left: -200px;
 }
 
-/* .getin {
+ .getin {
   margin-left: 1px;
   width: auto;
   height: auto;
@@ -398,7 +398,7 @@ hr {
   box-sizing: border-box;
   border-radius: 8px;
   border-color: var(--color-primary);
-} */
+}
 
 .getin:hover {
   background: #8f9afc;
