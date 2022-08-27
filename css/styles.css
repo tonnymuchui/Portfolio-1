@@ -370,7 +370,7 @@ hr {
   border: 1px solid #cfd8dc;
 }
 
-.getin1 {
+.getin {
   padding-top: 7px;
   padding-bottom: 7px;
   color: #6070ff;
@@ -379,6 +379,9 @@ hr {
   border: 1px solid #cfd8dc;
   padding-left: 10px;
   margin-left: -200px;
+}
+
+.getin1 {
   width: auto;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
