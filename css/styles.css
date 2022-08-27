@@ -382,13 +382,8 @@ hr {
   margin-left: -200px;
 }
 
-/* .getin {
-  margin-left: 1px;
+.getin {
   width: auto;
-  height: auto;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
@@ -398,7 +393,7 @@ hr {
   box-sizing: border-box;
   border-radius: 8px;
   border-color: var(--color-primary);
-} */
+}
 
 .getin:hover {
   background: #8f9afc;
@@ -408,4 +403,13 @@ hr {
 .getin:active {
   background: #0416b6;
   color: white;
+}
+
+.hr-footer {
+  margin-top: 115px;
+  margin-left: 105px;
+  border: 2px solid black;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
 }
