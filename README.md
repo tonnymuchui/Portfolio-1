@@ -6,13 +6,13 @@
 
 #### Mobile View Portfolio Image.
 
-<img align="left" width="250" src="/images/portfolio.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/screen-1.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/screen-2.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/screen-3.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/screen-4.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/screen-6.png" alt="Portfolio Mobile View" />
-
+<img align="left" width="250" src="/images/desk1.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk2.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk3.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk4.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk5.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk6.png" alt="Portfolio Mobile View" />
+<img align="left" width="250" src="/images/desk7.png" alt="Portfolio Mobile View" />
 ## Built With
 
 - HTML&CSS
@@ -62,5 +62,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
