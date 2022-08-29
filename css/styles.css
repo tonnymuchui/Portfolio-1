@@ -57,7 +57,7 @@ nav {
 }
 
 .content-section {
-  background-image: url(/images/mobilebackground.png);
+  background-image: url(../images/mobilebackground.png);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -365,7 +365,7 @@ li {
 }
 
 .contact-form {
-  background-image: url(/images/contactform-shapes-mobile.png);
+  background-image: url(../images/contactform-shapes-mobile.png);
   background-repeat: no-repeat;
   background-color: #6070ff;
   background-size: contain;
@@ -464,11 +464,11 @@ form {
   }
 
   .content-section {
-    background-image: url(/images/mobilebackground.png);
+    background-image: url(../images/mobilebackground.png);
   }
 
   .contact-form {
-    background-image: url(/images/bigbacklastpage.png);
+    background-image: url(../images/bigbacklastpage.png);
   }
 
   .img {
