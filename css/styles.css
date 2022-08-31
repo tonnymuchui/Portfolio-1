@@ -52,7 +52,7 @@ nav {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #6070ff;
+  color: #0F27FF;
   text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0011A8;
   text-decoration: none;
   list-style: none;
 }
@@ -204,7 +204,7 @@ img {
   border-radius: 8px;
   list-style: none;
   display: inline;
-  color: var(--color-primary);
+  color: #0011A8;
   font-size: 15px;
   font-family: "poppins", sans-serif !important;
 }
@@ -280,9 +280,9 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  color: #6070ff;
+  color: #0011A8;
   padding: 12px;
-  border: 1px solid #6070ff;
+  border: 1px solid #0011A8;
   box-sizing: border-box;
   border-radius: 8px;
   background-color: white;
