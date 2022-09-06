@@ -12,5 +12,4 @@ document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('
   hamburger.classList.remove('active');
   navmenu.classList.remove('active');
   body.classList.remove('active');
-})
-);
+}),);
