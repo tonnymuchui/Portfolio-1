@@ -604,7 +604,7 @@ nav .openMenu {
   .nav-list {
     position: fixed;
     left: -100%;
-    top: 0px;
+    top: 1px;
     opacity: 0.9;
     gap: 0;
     flex-direction: column;
