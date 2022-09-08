@@ -132,7 +132,7 @@ const modalCardDisplay = modalCard
 
             <li class="pop-close"><i class="fa fa-times"></i></li>
                 <h2 class="work-heading">${modeCard.title}</h2>
-                <ul class="dev-date">
+                <ul class="dev-date space-date">
                 <li class="canopy">CANOPY</li>
                 <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Back End Dev</li>
                 <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2015</li>
