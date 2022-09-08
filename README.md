@@ -12,7 +12,7 @@
 <img align="left" width="250" src="/images/desk4.png" alt="Portfolio Mobile View" />
 <img align="left" width="250" src="/images/desk5.png" alt="Portfolio Mobile View" />
 <img align="left" width="250" src="/images/desk6.png" alt="Portfolio Mobile View" />
-<img align="left" width="250" src="/images/desk7.png" alt="Portfolio Mobile View" />
+<img align="left" width="500" src="/images/desk7.png" alt="Portfolio Mobile View" />
 ## Built With
 
 - HTML&CSS
