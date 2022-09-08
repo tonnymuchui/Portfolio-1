@@ -611,18 +611,6 @@ nav .openMenu {
     transform: translate(20px, 10px);
   }
 
-  /* .name:hover {
-    transform: translate(42px, 18px);
-  } */
-
-  /* .email:hover {
-    transform: translate(42px, 18px);
-  } */
-  /* 
-  .text:hover {
-    transform: translate(42px, 18px);
-  } */
-
   .pop-close {
     display: block;
     position: absolute;
