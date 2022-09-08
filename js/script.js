@@ -195,3 +195,6 @@ popClose.addEventListener('click', () => {
   body.style.filter = 'none';
   enableScroll();
 });
+
+const email = document.getElementById("email");
+const form = document.getElementById("form-email");
