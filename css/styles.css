@@ -523,7 +523,7 @@ nav .openMenu {
     padding: 24px;
   }
 
-  .work-card{
+  .work-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -849,4 +849,7 @@ nav .openMenu {
   .forD-1 {
     display: none;
   }
+}
+.space-date {
+  margin-bottom: 15px;
 }
