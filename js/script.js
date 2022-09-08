@@ -1,65 +1,78 @@
-const hamburger = document.querySelector(".humburger");
-const navmenu = document.querySelector(".nav-list");
-const body = document.querySelector(".content-section");
+const hamburger = document.querySelector('.humburger');
+const navmenu = document.querySelector('.nav-list');
+const body = document.querySelector('.content-section');
+const worksBody = document.querySelector('.works');
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navmenu.classList.toggle("active");
-  body.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navmenu.classList.toggle('active');
+  body.classList.toggle('active');
 });
 
-document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navmenu.classList.remove("active");
-    body.classList.remove("active");
-  })
-);
+document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navmenu.classList.remove('active');
+  body.classList.remove('active');
+}));
+
+function disableScroll() {
+  worksBody.style.filter = 'blur(7px)';
+  const xPos = window.scrollX;
+  const yPos = window.scrollY;
+  window.onscroll = () => {
+    window.scroll(xPos, yPos);
+  };
+}
+
+function enableScroll() {
+  worksBody.style.filter = 'blur(0px)';
+  window.onscroll = '';
+}
 
 const cards = [
   {
     id: 1,
-    title: "Tonic",
-    imageM: "./images/SnapshootPortfolio02.png",
-    imageD: "./images/Portfolio1-big.png",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Tonic',
+    imageM: './images/SnapshootPortfolio02.png',
+    imageD: './images/Portfolio1-big.png',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 2,
-    title: "Multi-Post Stories",
-    imageM: "./images/image2desktop.png",
-    imageD: "./images/Portfolio2.png",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Multi-Post Stories',
+    imageM: './images/image2desktop.png',
+    imageD: './images/Portfolio2.png',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 3,
-    title: "Facebook 360",
-    imageM: "./images/image3desktop.png",
-    imageD: "./images/PopUpdesktop.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Facebook 360',
+    imageM: './images/image3desktop.png',
+    imageD: './images/PopUpdesktop.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 4,
-    title: "Uber Navigation",
-    imageM: "./images/image4desktop.png",
-    imageD: "./images/PopUpdesktop.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Uber Navigation',
+    imageM: './images/image4desktop.png',
+    imageD: './images/PopUpdesktop.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
 ];
 
-const works_card = cards.map(
+const worksCard = cards.map(
   (card, index) => `
 <section class="works ${index}">
 <div class="work-card">
@@ -81,33 +94,33 @@ const works_card = cards.map(
   <ul class="badges">
   ${card.languages
     .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join("")}
+    .join('')}
   </ul>
   <button class="btn" onclick="showPop(${card.id})"> See Project </button>
 </div>
 </div>
 </section>
-`
+`,
 );
 
-const worksCard = document.querySelector(".works");
-worksCard.innerHTML += works_card;
+const workCard = document.querySelector('.works');
+workCard.innerHTML += worksCard;
 
 const modalCard = [
   {
     id: 1,
-    title: "Tonic",
-    imageM: "./images/PopUpmobile.svg",
-    imageD: "./images/PopUpdesktopcopy.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Tonic',
+    imageM: './images/PopUpmobile.svg',
+    imageD: './images/PopUpdesktopcopy.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescriptionD:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is    simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea, languages: html, css, javascript",
     cardDescriptionM:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ",
-    languagesD: ["github", "ruby", "Bootstrap"],
-    languagesM: ["html", "css", "javascript"],
-    linkLive: "https://github.com/tonnymuchui/Portfolio",
-    linkSource: "https://tonnymuchui.github.io/Portfolio/",
+    languagesD: ['github', 'ruby', 'Bootstrap'],
+    languagesM: ['html', 'css', 'javascript'],
+    linkLive: 'https://github.com/tonnymuchui/Portfolio',
+    linkSource: 'https://tonnymuchui.github.io/Portfolio/',
   },
 ];
 
@@ -144,62 +157,41 @@ const modalCardDisplay = modalCard
       <div class="column-right-1">
           <ul class="modal-1">
               ${modeCard.languagesM
-                .map((lang) => `<li class="works-badge">${lang}</li>`)
-                .join("")}
+    .map((lang) => `<li class="works-badge">${lang}</li>`)
+    .join('')}
           </ul>
           <ul id="miss" class="miss modal-1">
           ${modeCard.languagesD
-            .map((lang) => `<li class="works-badge">${lang}</li>`)
-            .join("")}
+    .map((lang) => `<li class="works-badge">${lang}</li>`)
+    .join('')}
           </ul>
           <hr>
           <ul class="modal-1">
-              <li class="modal-3" href="${
-                modeCard.linkLive
-              }">See live <img class="btnimag" src="./images/icon/Icon.png"></li>
-              <li class="modal-3" href="${
-                modeCard.linkSource
-              }">See Source <i class="fa fa-github"></i></li>
-
+              <li class="modal-3" href="${modeCard.linkLive}">See live <img class="btnimag" src="./images/icon/Icon.png"></li>
+              <li class="modal-3" href="${modeCard.linkSource}">See Source <i class="fa fa-github"></i></li>
           </ul>
       </div>
   </div>
       </div>
   </div>
-`
-  )
-  .join("");
+`,
+  ).join('');
 
-const modalCards = document.getElementById("modal-cards");
+const modalCards = document.getElementById('modal-cards');
 modalCards.innerHTML += modalCardDisplay;
-const boxModal = document.querySelector(".card-portfolio-1");
-const openModal = document.querySelectorAll(".btn");
-const worksBody = document.querySelector(".works");
+const boxModal = document.querySelector('.card-portfolio-1');
+const openModal = document.querySelectorAll('.btn');
 
 openModal.forEach((open) => {
-  open.addEventListener("click", () => {
-    boxModal.style.display = "block";
+  open.addEventListener('click', () => {
+    boxModal.style.display = 'block';
     disableScroll();
   });
 });
 
-const popClose = document.querySelector(".pop-close");
-popClose.addEventListener("click", () => {
-  boxModal.style.display = "none";
-  body.style.filter = "none";
+const popClose = document.querySelector('.pop-close');
+popClose.addEventListener('click', () => {
+  boxModal.style.display = 'none';
+  body.style.filter = 'none';
   enableScroll();
 });
-
-function disableScroll() {
-  worksBody.style.filter = "blur(7px)";
-  const xPos = window.scrollX;
-  const yPos = window.scrollY;
-  window.onscroll = () => {
-    window.scroll(xPos, yPos);
-  };
-}
-
-function enableScroll() {
-  worksBody.style.filter = "blur(0px)";
-  window.onscroll = "";
-}
