@@ -609,7 +609,7 @@ nav .openMenu {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #6b778c;;
+    color: #6b778c;
   }
 
   .forD-1 {
@@ -634,7 +634,7 @@ nav .openMenu {
     height: 100%;
     left: 0;
     top: 0;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -760,7 +760,7 @@ nav .openMenu {
   }
 
   .column-left-1 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

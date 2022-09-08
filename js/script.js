@@ -1,18 +1,20 @@
-const hamburger = document.querySelector('.humburger');
-const navmenu = document.querySelector('.nav-list');
-const body = document.querySelector('.content-section');
+const hamburger = document.querySelector(".humburger");
+const navmenu = document.querySelector(".nav-list");
+const body = document.querySelector(".content-section");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navmenu.classList.toggle('active');
-  body.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navmenu.classList.toggle("active");
+  body.classList.toggle("active");
 });
 
-document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navmenu.classList.remove('active');
-  body.classList.remove('active');
-}));
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navmenu.classList.remove("active");
+    body.classList.remove("active");
+  })
+);
 
 const cards = [
   {
@@ -21,7 +23,8 @@ const cards = [
     imageM: "./images/SnapshootPortfolio02.png",
     imageD: "./images/Portfolio1-big.png",
     heading2: ["Canopy", "Back End Dev", "2015"],
-    cardDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    cardDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     languages: ["html", "css", "javascript"],
   },
   {
@@ -30,7 +33,8 @@ const cards = [
     imageM: "./images/image2desktop.png",
     imageD: "./images/Portfolio2.png",
     heading2: ["Canopy", "Back End Dev", "2015"],
-    cardDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    cardDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     languages: ["html", "css", "javascript"],
   },
   {
@@ -39,7 +43,8 @@ const cards = [
     imageM: "./images/image3desktop.png",
     imageD: "./images/PopUpdesktop.svg",
     heading2: ["Canopy", "Back End Dev", "2015"],
-    cardDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    cardDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     languages: ["html", "css", "javascript"],
   },
   {
@@ -48,13 +53,14 @@ const cards = [
     imageM: "./images/image4desktop.png",
     imageD: "./images/PopUpdesktop.svg",
     heading2: ["Canopy", "Back End Dev", "2015"],
-    cardDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    cardDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     languages: ["html", "css", "javascript"],
   },
 ];
 
-const works_card = cards
-.map((card, index) => `
+const works_card = cards.map(
+  (card, index) => `
 <section class="works ${index}">
 <div class="work-card">
 <img
@@ -74,14 +80,15 @@ const works_card = cards
   </p>
   <ul class="badges">
   ${card.languages
-    .map((lang) => `<li class="works-badge">${lang}</li>`).join('')}
+    .map((lang) => `<li class="works-badge">${lang}</li>`)
+    .join("")}
   </ul>
-  <button class="btn" onclick="showPop(${card.id })"> See Project </button>
+  <button class="btn" onclick="showPop(${card.id})"> See Project </button>
 </div>
 </div>
 </section>
 `
-)
+);
 
 const worksCard = document.querySelector(".works");
 worksCard.innerHTML += works_card;
@@ -171,16 +178,16 @@ const worksBody = document.querySelector(".works");
 
 openModal.forEach((open) => {
   open.addEventListener("click", () => {
-  boxModal.style.display = "block";
-  disableScroll();
+    boxModal.style.display = "block";
+    disableScroll();
   });
 });
 
 const popClose = document.querySelector(".pop-close");
 popClose.addEventListener("click", () => {
-boxModal.style.display = "none";
-body.style.filter = "none";
-enableScroll();
+  boxModal.style.display = "none";
+  body.style.filter = "none";
+  enableScroll();
 });
 
 function disableScroll() {
@@ -194,5 +201,5 @@ function disableScroll() {
 
 function enableScroll() {
   worksBody.style.filter = "blur(0px)";
-  window.onscroll = '';
+  window.onscroll = "";
 }
