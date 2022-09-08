@@ -174,32 +174,34 @@
               feature that you need built or a project that needs coding. I’d
               love to help with it
             </p>
-            <form action="https://formspree.io/f/mwkzpozz" method="POST">
+            <form id="contact-from-validation" action="https://formspree.io/f/mwkzpozz" method="POST">
               <input
                 type="text"
                 name="name"
+                id="name"
                 class="name"
                 placeholder="Full Name"
                 maxlength="30"
                 required
               />
-
               <input
                 type="email"
                 name="email"
+                id="email"
                 class="name"
                 placeholder="Email address"
                 required
               />
-
               <textarea
                 name="text"
                 class="text"
+                id="text"
                 placeholder="Write your message here"
                 maxlength="500"
                 required
               ></textarea>
-              <button class="btn" type="submit">Get in Touch</button>
+              <small class="error-msg"></small>
+              <button class="btn-form" type="submit">Get in Touch</button>
             </form>
           </div>
         </section>
