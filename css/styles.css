@@ -287,7 +287,8 @@ li {
   color: #091e42;
 }
 
-.btn {
+.btn,
+.btn-form {
   width: fit-content;
   text-align: center;
   font-family: "Poppins", sans-serif !important;
@@ -303,12 +304,14 @@ li {
   margin-bottom: 30px;
 }
 
-.btn:hover {
+.btn,
+.btn-form:hover {
   color: #fff;
   background-color: #6070ff;
 }
 
-.btn:active {
+.btn,
+.btn-form:active {
   background: #6070ff;
   color: #fff;
 }
@@ -417,18 +420,30 @@ li {
   padding: 0;
 }
 
-.name {
+input {
+  display: flex;
   padding: 15px;
   border: none;
   border-radius: 8px;
+  color: #172b4d;
 }
 
-.name::placeholder {
+input::placeholder {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   color: #172b4d;
+}
+
+.error-msg {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  visibility: hidden;
+  transition: visibility 0.2s ease-in-out;
+  background-color: red;
+  width: 265px;
 }
 
 .text {
@@ -547,7 +562,7 @@ nav .openMenu {
     width: 70%;
   }
 
-  form .btn {
+  form .btn-form {
     margin: 0 auto;
   }
 
@@ -596,17 +611,17 @@ nav .openMenu {
     transform: translate(20px, 10px);
   }
 
-  .name:hover {
+  /* .name:hover {
     transform: translate(42px, 18px);
-  }
+  } */
 
-  .email:hover {
+  /* .email:hover {
     transform: translate(42px, 18px);
-  }
-
+  } */
+  /* 
   .text:hover {
     transform: translate(42px, 18px);
-  }
+  } */
 
   .pop-close {
     display: block;
