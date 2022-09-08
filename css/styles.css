@@ -523,12 +523,16 @@ nav .openMenu {
     padding: 24px;
   }
 
-  .work-card {
+  .work-card{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 2%;
+  }
+
+  .works:nth-child(odd) .work-card {
+    flex-direction: row-reverse;
   }
 
   .img-last {
