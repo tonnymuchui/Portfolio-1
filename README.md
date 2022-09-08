@@ -12,7 +12,7 @@
 <img width="30%" src="/images/desk4.png" alt="Portfolio Mobile View" />
 <img width="30%" src="/images/desk5.png" alt="Portfolio Mobile View" />
 <img width="30%" src="/images/desk6.png" alt="Portfolio Mobile View" />
-<img width="3%" src="/images/desk7.png" alt="Portfolio Mobile View" />
+<img width="30%" src="/images/desk7.png" alt="Portfolio Mobile View" />
 
 
 ## Built With
