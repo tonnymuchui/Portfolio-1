@@ -1,24 +1,22 @@
-const hamburger = document.querySelector(".humburger");
-const navmenu = document.querySelector(".nav-list");
-const body = document.querySelector(".content-section");
-const worksBody = document.querySelector(".works");
+const hamburger = document.querySelector('.humburger');
+const navmenu = document.querySelector('.nav-list');
+const body = document.querySelector('.content-section');
+const worksBody = document.querySelector('.works');
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navmenu.classList.toggle("active");
-  body.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navmenu.classList.toggle('active');
+  body.classList.toggle('active');
 });
 
-document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navmenu.classList.remove("active");
-    body.classList.remove("active");
-  })
-);
+document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navmenu.classList.remove('active');
+  body.classList.remove('active');
+}));
 
 function disableScroll() {
-  worksBody.style.filter = "blur(7px)";
+  worksBody.style.filter = 'blur(7px)';
   const xPos = window.scrollX;
   const yPos = window.scrollY;
   window.onscroll = () => {
@@ -27,50 +25,50 @@ function disableScroll() {
 }
 
 function enableScroll() {
-  worksBody.style.filter = "blur(0px)";
-  window.onscroll = "";
+  worksBody.style.filter = 'blur(0px)';
+  window.onscroll = '';
 }
 
 const cards = [
   {
     id: 1,
-    title: "Tonic",
-    imageM: "./images/SnapshootPortfolio02.png",
-    imageD: "./images/Portfolio1-big.png",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Tonic',
+    imageM: './images/SnapshootPortfolio02.png',
+    imageD: './images/Portfolio1-big.png',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 2,
-    title: "Multi-Post Stories",
-    imageM: "./images/image2desktop.png",
-    imageD: "./images/Portfolio2.png",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Multi-Post Stories',
+    imageM: './images/image2desktop.png',
+    imageD: './images/Portfolio2.png',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 3,
-    title: "Facebook 360",
-    imageM: "./images/image3desktop.png",
-    imageD: "./images/PopUpdesktop.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Facebook 360',
+    imageM: './images/image3desktop.png',
+    imageD: './images/PopUpdesktop.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
   {
     id: 4,
-    title: "Uber Navigation",
-    imageM: "./images/image4desktop.png",
-    imageD: "./images/PopUpdesktop.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Uber Navigation',
+    imageM: './images/image4desktop.png',
+    imageD: './images/PopUpdesktop.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'css', 'javascript'],
   },
 ];
 
@@ -96,33 +94,33 @@ const worksCard = cards.map(
   <ul class="badges">
   ${card.languages
     .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join("")}
+    .join('')}
   </ul>
   <button class="btn" onclick="showPop(${card.id})"> See Project </button>
 </div>
 </div>
 </section>
-`
+`,
 );
 
-const workCard = document.querySelector(".works");
+const workCard = document.querySelector('.works');
 workCard.innerHTML += worksCard;
 
 const modalCard = [
   {
     id: 1,
-    title: "Tonic",
-    imageM: "./images/PopUpmobile.svg",
-    imageD: "./images/PopUpdesktopcopy.svg",
-    heading2: ["Canopy", "Back End Dev", "2015"],
+    title: 'Tonic',
+    imageM: './images/PopUpmobile.svg',
+    imageD: './images/PopUpdesktopcopy.svg',
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescriptionD:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is    simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea, languages: html, css, javascript",
     cardDescriptionM:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ",
-    languagesD: ["github", "ruby", "Bootstrap"],
-    languagesM: ["html", "css", "javascript"],
-    linkLive: "https://github.com/tonnymuchui/Portfolio",
-    linkSource: "https://tonnymuchui.github.io/Portfolio/",
+    languagesD: ['github', 'ruby', 'Bootstrap'],
+    languagesM: ['html', 'css', 'javascript'],
+    linkLive: 'https://github.com/tonnymuchui/Portfolio',
+    linkSource: 'https://tonnymuchui.github.io/Portfolio/',
   },
 ];
 
@@ -159,52 +157,101 @@ const modalCardDisplay = modalCard
       <div class="column-right-1">
           <ul class="modal-1">
               ${modeCard.languagesM
-                .map((lang) => `<li class="works-badge">${lang}</li>`)
-                .join("")}
+    .map((lang) => `<li class="works-badge">${lang}</li>`)
+    .join('')}
           </ul>
           <ul id="miss" class="miss modal-1">
           ${modeCard.languagesD
-            .map((lang) => `<li class="works-badge">${lang}</li>`)
-            .join("")}
+    .map((lang) => `<li class="works-badge">${lang}</li>`)
+    .join('')}
           </ul>
           <hr>
           <ul class="modal-1">
-              <li class="modal-3" href="${
-                modeCard.linkLive
-              }">See live <img class="btnimag" src="./images/icon/Icon.png"></li>
-              <li class="modal-3" href="${
-                modeCard.linkSource
-              }">See Source <i class="fa fa-github"></i></li>
+              <li class="modal-3" href="${modeCard.linkLive}">See live <img class="btnimag" src="./images/icon/Icon.png"></li>
+              <li class="modal-3" href="${modeCard.linkSource}">See Source <i class="fa fa-github"></i></li>
           </ul>
       </div>
   </div>
       </div>
   </div>
-`
-  )
-  .join("");
+`,
+  ).join('');
 
-const modalCards = document.getElementById("modal-cards");
+const modalCards = document.getElementById('modal-cards');
 modalCards.innerHTML += modalCardDisplay;
-const boxModal = document.querySelector(".card-portfolio-1");
-const openModal = document.querySelectorAll(".btn");
+const boxModal = document.querySelector('.card-portfolio-1');
+const openModal = document.querySelectorAll('.btn');
 
 openModal.forEach((open) => {
-  open.addEventListener("click", () => {
-    boxModal.style.display = "block";
+  open.addEventListener('click', () => {
+    boxModal.style.display = 'block';
     disableScroll();
   });
 });
 
-const popClose = document.querySelector(".pop-close");
-popClose.addEventListener("click", () => {
-  boxModal.style.display = "none";
-  body.style.filter = "none";
+const popClose = document.querySelector('.pop-close');
+popClose.addEventListener('click', () => {
+  boxModal.style.display = 'none';
+  body.style.filter = 'none';
   enableScroll();
 });
 
-const email = document.getElementById("email");
-const form = document.getElementById("form-email");
+// form validation
+function showMessage(input, message, type) {
+  const msg = input.parentNode.querySelector('small');
+  msg.style.visibility = 'visible';
+  setTimeout(() => {
+    msg.style.visibility = 'hidden';
+  }, 3000);
+  msg.innerText = message;
+  input.className = type ? '' : 'input-error';
+  return type;
+}
 
-const displayMsg = document.getElementById("form-message-error");
-displayMsg.innerHTML = "Your email address should be in lowercase";
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return showMessage(input, '', true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+  // validate email format
+  const emailRegex = /^[a-z][a-z0-9_@.]*$/;
+
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+
+const form = document.querySelector('#contact-from-validation');
+
+const NAME_REQUIRED = 'Please enter your name';
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID = 'Your email address should be in lowercase';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
+  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  if (nameValid && emailValid) {
+    form.submit();
+    form.elements.name.value = '';
+    form.elements.email.value = '';
+    form.elements.message.value = '';
+  }
+});
