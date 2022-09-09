@@ -3,7 +3,7 @@ const navmenu = document.querySelector('.nav-list');
 const body = document.querySelector('.content-section');
 const worksBody = document.querySelector('.works');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('input', () => {
   hamburger.classList.toggle('active');
   navmenu.classList.toggle('active');
   body.classList.toggle('active');
@@ -178,7 +178,7 @@ const modalCardDisplay = modalCard
   ).join('');
 
 const modalCards = document.getElementById('modal-cards');
-modalCards.innerHTML += modalCardDisplay;
+modalCards.innerHTML -= modalCardDisplay;
 const boxModal = document.querySelector('.card-portfolio-1');
 const openModal = document.querySelectorAll('.btn');
 
