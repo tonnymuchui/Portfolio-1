@@ -255,3 +255,34 @@ form.addEventListener('submit', (event) => {
     form.elements.message.value = '';
   }
 });
+
+// preserve data with localStorage
+const formDataFromLocalStorage = localStorage.getItem('formData') ? JSON.parse(localStorage.getItem('formData')) : null;
+const formData = {
+  name: formDataFromLocalStorage ? formDataFromLocalStorage.name : '',
+  email: formDataFromLocalStorage ? formDataFromLocalStorage.email : '',
+  message: formDataFromLocalStorage ? formDataFromLocalStorage.message : '',
+};
+
+const setFormData = () => {
+  form.elements.name.value = formData.name;
+  form.elements.email.value = formData.email;
+  form.elements.text.value = formData.message;
+};
+
+setFormData();
+
+form.elements.name.addEventListener('change', () => {
+  formData.name = form.elements.name.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.elements.email.addEventListener('change', () => {
+  formData.email = form.elements.email.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.elements.message.addEventListener('change', () => {
+  formData.message = form.elements.text.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
