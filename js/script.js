@@ -17,8 +17,8 @@ const cards = [
   {
     id: 1,
     title: 'Recipe App',
-    imageM: '../images/recipeHome.jpg',
-    imageD: '../images/recipeHome.jpg',
+    imageM: '/../images/recipeHome.jpg',
+    imageD: '/../images/recipeHome.jpg',
     heading2: ['Meals'],
     heading3: ['Android'],
     heading4: ['2023'],
@@ -29,8 +29,8 @@ const cards = [
   {
     id: 2,
     title: 'Metrics',
-    imageM: '/images/crypto.png',
-    imageD: '/images/crypto.png',
+    imageM: '../images/crypto.png',
+    imageD: '../images/crypto.png',
     heading2: ['Crypto'],
     heading3: ['Reactjs'],
     heading4: ['2023'],
