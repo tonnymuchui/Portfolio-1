@@ -29,8 +29,8 @@ const cards = [
   {
     id: 2,
     title: 'Metrics',
-    imageM: '../images/crypto.png',
-    imageD: '../images/crypto.png',
+    imageM: '/images/crypto.png',
+    imageD: '/images/crypto.png',
     heading2: ['Crypto'],
     heading3: ['Reactjs'],
     heading4: ['2023'],
