@@ -104,8 +104,8 @@ const modalCard = [
   {
     id: 1,
     title: 'Recipe',
-    imageM: '../images/recipeHome.jpg',
-    imageD: '../images/recipeHome.jpg',
+    imageM: '/images/recipeHome.jpg',
+    imageD: '/images/recipeHome.jpg',
     heading2: ['Recipe'],
     heading3: ['Android'],
     heading4: ['2023'],
