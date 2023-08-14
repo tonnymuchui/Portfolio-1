@@ -17,8 +17,8 @@ const cards = [
   {
     id: 1,
     title: 'Recipe App',
-    imageM: '/../images/recipeHome.png',
-    imageD: '/../images/recipeHome.png',
+    imageM: '/images/recipeHome.png',
+    imageD: '/images/recipeHome.png',
     heading2: ['Meals'],
     heading3: ['Android'],
     heading4: ['2023'],
@@ -71,7 +71,7 @@ const worksCard = cards.map(
 <img
   class="img"
   src="${card.imageM}"
-  alt="SnapshootPortfolio02-img"
+  alt="Recipe-image-img"
 />
 <div class="align-center-text">
   <h3 class="work-heading ${id}">${card.title}</h3>
