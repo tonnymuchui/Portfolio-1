@@ -121,8 +121,8 @@ const modalCard = [
   {
     id: 2,
     title: 'Metrics',
-    imageM: '../images/crypto.png',
-    imageD: '../images/crypto.png',
+    imageM: 'images/crypto.png',
+    imageD: 'images/crypto.png',
     heading2: ['Crypto'],
     heading3: ['Reactjs'],
     heading4: ['2022'],
@@ -138,8 +138,8 @@ const modalCard = [
   {
     id: 3,
     title: 'Image Search',
-    imageM: '../images/imagesearch.png',
-    imageD: '../images/imagesearch.png',
+    imageM: 'images/imagesearch.png',
+    imageD: 'images/imagesearch.png',
     heading2: ['Images'],
     heading3: ['Android'],
     heading4: ['2022'],
@@ -155,8 +155,8 @@ const modalCard = [
   {
     id: 4,
     title: 'Movie',
-    imageM: '../images/movie.png',
-    imageD: '../images/movie.png',
+    imageM: 'images/movie.png',
+    imageD: 'images/movie.png',
     heading2: ['Movies'],
     heading3: ['Reactjs'],
     heading4: ['2022'],
