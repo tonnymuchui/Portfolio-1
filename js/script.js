@@ -17,8 +17,8 @@ const cards = [
   {
     id: 1,
     title: 'Recipe App',
-    imageM: '/images/recipeHome.png',
-    imageD: '/images/recipeHome.png',
+    imageM: 'images/recipeHome.png',
+    imageD: 'images/recipeHome.png',
     heading2: ['Meals'],
     heading3: ['Android'],
     heading4: ['2023'],
@@ -217,7 +217,7 @@ btns.forEach((btn) => {
 
 <hr>
 <ul class="modal-1">
-  <a href="${item.linkLive}" target= "_blank" class="modal-3" >See live <img class="btnimag" src="../images/icon/Icon.png"></a>
+  <a href="${item.linkLive}" target= "_blank" class="modal-3" >See live <img class="btnimag" src="images/icon/Icon.png"></a>
   <a href="${item.linkSource}" target= "_blank" class="modal-3" >See Source <i class="fa fa-github"></i></a>
 </ul>
 </div>
