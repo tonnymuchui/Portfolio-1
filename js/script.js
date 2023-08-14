@@ -29,8 +29,8 @@ const cards = [
   {
     id: 2,
     title: 'Metrics',
-    imageM: '../images/crypto.png',
-    imageD: '../images/crypto.png',
+    imageM: 'images/crypto.png',
+    imageD: 'images/crypto.png',
     heading2: ['Crypto'],
     heading3: ['Reactjs'],
     heading4: ['2023'],
@@ -41,8 +41,8 @@ const cards = [
   {
     id: 3,
     title: 'Image Search',
-    imageM: '../images/imagesearch.png',
-    imageD: '../images/imagesearch.png',
+    imageM: 'images/imagesearch.png',
+    imageD: 'images/imagesearch.png',
     heading2: ['Images'],
     heading3: ['Android'],
     heading4: ['2022'],
@@ -53,8 +53,8 @@ const cards = [
   {
     id: 4,
     title: 'Movies',
-    imageM: '../images/movie.png',
-    imageD: '../images/movie.png',
+    imageM: 'images/movie.png',
+    imageD: 'images/movie.png',
     heading2: ['Mission'],
     heading3: ['Reactjs'],
     heading4: ['2022'],
@@ -104,8 +104,8 @@ const modalCard = [
   {
     id: 1,
     title: 'Recipe',
-    imageM: '/images/recipeHome.jpg',
-    imageD: '/images/recipeHome.jpg',
+    imageM: 'images/recipeHome.jpg',
+    imageD: 'images/recipeHome.jpg',
     heading2: ['Recipe'],
     heading3: ['Android'],
     heading4: ['2023'],
