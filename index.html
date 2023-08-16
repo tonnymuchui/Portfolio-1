@@ -16,9 +16,9 @@
 <body>
       <header class="navbar">
       <nav>
-        <a href="#home" class="nav-logo">Tonny Muchui</a>
+        <a href="#" class="nav-logo">Tonny Muchui</a>
         <div class="menu-bar">
-
+          <a class="nav-item active" href="#">Home</a>
           <a class="nav-item" href="#works">Portfolio</a>
           <a class="nav-item" href="#details">About</a>
           <a class="nav-item" href="#reach-out">Contact</a>
@@ -40,7 +40,7 @@
       </header>
     <main>
         <section id="home" class="content-section">
-            <div class="content">
+            <div class="content hiddenAnime">
                 <h1 class="content-text">I'm Tonny Muchui<br>Glad to see you!</h1>
                 <p class="content-text-p">
                   I'm Tony Muchui, a forward-thinking professional fueled by ambition.
@@ -55,7 +55,7 @@
                 </ul>
               </div>
             </section>
-            <section id="works" class="works">
+            <section id="works" class="works hiddenAnime">
 
               <div class="container">
 
@@ -70,7 +70,7 @@
 
               <section id="details" class="about-section-2">
                 <div class="align-center-text-2">
-                  <div class="about-detail-left">
+                  <div class="about-detail-left hiddenAnime">
                     <h2 class="header-text">About<br>Myself</h2>
                   <p class="content-text-p">
                     I bring adaptability, responsibility, and creativity to every endeavor. With a proven track record in Android and web development, I'm actively pursuing a software role in a dynamic setting. My goal? To consistently deliver excellence, contribute to impactful ventures, and continuously grow both personally and professionally.
@@ -85,7 +85,7 @@
                 <a href="" class="btn-Resume">Get my Resume</a>
                 </div>
 
-                    <ul class="lang-icon">
+                    <ul class="lang-icon hiddenAnime">
                       <li class="lang-icon-2 lang-icon-3" >
                         <div class="languages" > Languages
                           <img class="png-1" src="./images/d-arrow.png" id="arrow-up" alt="" />
@@ -143,14 +143,15 @@
                         />
                       </div>
                     </section>
-                  </section>
               <section id="reach-out" class="contact-form">
                 <div class="contact-me-container">
+                  <div class="hiddenAnime">
                   <h2>Contact me</h2>
                   <p>
                     As an experienced software developer, I have a track record of building innovative products, features, and websites. Please take a look at some of my previous work to see the quality of my output. If you are interested in collaborating on a project, feel free to get in touch with me. I'd be more than happy to help you bring your ideas to life.
                   </p>
-                  <form id="contact-from-validation" action="https://formspree.io/f/mwkzpozz"
+                </div>
+                  <form class="hiddenAnime" id="contact-from-validation" action="https://formspree.io/f/mwkzpozz"
                   method="POST">
 
                   <input type="text" id="name" name="name" class="name" placeholder="Full Name" maxlength="30" required>

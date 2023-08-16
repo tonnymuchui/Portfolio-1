@@ -73,7 +73,7 @@ const worksCard = cards.map(
   src="${card.imageM}"
   alt="Recipe-image-img"
 />
-<div class="align-center-text">
+<div class="align-center-text hiddenAnime">
   <h3 class="work-heading ${id}">${card.title}</h3>
   <ul class="dev-date">
     <li class="canopy">${card.heading2}</li>
@@ -104,8 +104,8 @@ const modalCard = [
   {
     id: 1,
     title: 'Recipe',
-    imageM: 'images/recipeHome.jpg',
-    imageD: 'images/recipeHome.jpg',
+    imageM: 'images/recipeHome.png',
+    imageD: 'images/recipeHome.png',
     heading2: ['Recipe'],
     heading3: ['Android'],
     heading4: ['2023'],
@@ -366,3 +366,15 @@ form.elements.text.addEventListener('change', () => {
   formData.text = form.elements.text.value;
   localStorage.setItem('formData', JSON.stringify(formData));
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+const hiddenElement = document.querySelectorAll('.hiddenAnime');
+hiddenElement.forEach((el) => observer.observe(el));

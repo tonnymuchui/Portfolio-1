@@ -197,6 +197,20 @@ img {
   padding-left: 20px;
 }
 
+.menu-bar a {
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.menu-bar a:hover,
+ .menu-bar a.active {
+  background: #6070ff;
+  color: white;
+}
+
 .menu-bar {
   display: none;
 }
@@ -992,5 +1006,27 @@ form {
 
   .forD-1 {
     display: none;
+  }
+}
+
+.hiddenAnime {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hiddenAnime {
+    transition: none;
+  }
+  .hiddenRight {
+    transition: none;
   }
 }
