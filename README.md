@@ -3,7 +3,7 @@
 
 > Welcome to my Portfolio Mobile Version
 
-- Live version: [GitHub Page](https://tonnymuchui.github.io/Portfolio/)
+- Live version: [GitHub Page](https://tonnymuchui.github.io/Portfolio-1/)
 #### Mobile View Portfolio Image.
 
 <img width="100%" src="/images/desk1.png" alt="Portfolio Mobile View" />
